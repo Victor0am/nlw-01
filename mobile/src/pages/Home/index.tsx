@@ -23,13 +23,18 @@ const Home = () => {
     const [city, setCity] = useState("");
     const [ufs, setUfs] = useState<string[]>([]);
     const [cities, setCities] = useState<string[]>([]);
+    
     function handleNavigateToPoints() {
+        if(city === '' || uf === ''){
+            alert("Preencha os campos!");
+            return;
+        }
         navigation.navigate('Points', {
             city, uf
         });
     }
 
-     useEffect(()=> {
+    useEffect(()=> {
          axios.get<IBGEUFResponse[]>("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
          .then(response => {
              console.log("AAAAAAAAAAA");
@@ -38,9 +43,9 @@ const Home = () => {
              setUfs(ufInitials);
          });
 
-     }, []);
+    }, []);
 
-     useEffect(()=>{
+    useEffect(()=>{
         if(uf === ''){
             return;
         }
@@ -50,18 +55,7 @@ const Home = () => {
              const cityNames = response.data.map(city => city.nome);
              setCities(cityNames);
          });
-     }, [uf]);
-
-
-    // function handleSelectUf(event: <HTMLSelectElement>){
-    //     const uf = event.target.value;
-    //     setSelectedUf(uf);
-    // }
-
-    // function handleSelectCity(event: ChangeEvent<HTMLSelectElement>){
-    //     const city = event.target.value;
-    //     setSelectedCity(city);
-    // }
+    }, [uf]);
 
 
     return (
@@ -103,20 +97,6 @@ const Home = () => {
                             return (<Picker.Item label={city} value={city} key={index+1}/>)
                         })}
                     </Picker>
-                    <TextInput
-                        style={styles.input}
-                        placeholder="Digite a UF"
-                        value={uf}
-                        maxLength={2}
-                        autoCapitalize='characters'
-                        autoCorrect={false}
-                        onChangeText={setUf} />
-
-                    <TextInput style={styles.input}
-                        placeholder="Digite a Cidade"
-                        value={city}
-                        autoCorrect={false}
-                        onChangeText={setCity} />
                     <RectButton style={styles.button} onPress={() => handleNavigateToPoints()}>
                         <View style={styles.buttonIcon}>
                             <Feather name="arrow-right" color="#FFF" size={24} />

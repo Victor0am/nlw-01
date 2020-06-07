@@ -1161,6 +1161,11 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/masked-view/-/masked-view-0.1.6.tgz#c7f2ac187c1f25aa8c30d11baa8f4398eca3bb84"
   integrity sha512-PpMoeXwPUoldCRKDuSi+zK5rT+sJTW6ri6RdGPkSKRzU77Q1d9IaR0O5IKvBj0XSdL3p+dcOa05gk35aGDffBQ==
 
+"@react-native-community/picker@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@react-native-community/picker/-/picker-1.6.1.tgz#f893bf4982e549c954696d08a47e1d8e72762310"
+  integrity sha512-JuCOtim1tZhB3KoJhbuPj3pFweUnj4XgukktJk0MyUOB8wA3uCEHW+xsGYu8ZDYiyR0M6qXctz7Fz2qYFuTUSQ==
+
 "@react-navigation/core@^5.9.0":
   version "5.9.0"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-5.9.0.tgz#013bcfad898d8cf3bfb7cab3bf796afb660285a9"
@@ -1316,6 +1321,11 @@
     invariant "^2.2.4"
     lodash "^4.5.0"
     prop-types "^15.6.1"
+
+"@use-expo/font@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@use-expo/font/-/font-2.0.0.tgz#09b56d626e5b0c83cd0116f5bb69ad6d612d677f"
+  integrity sha512-oOJ2uaRyZNQg7PnQviz7nBcdrRL38zxScab4ktgtI4asa6G0dHW9wg307uJJmn0sHS04Yqtw+m0EOjDcGw3iWg==
 
 abort-controller@^3.0.0:
   version "3.0.0"
@@ -2505,7 +2515,7 @@ expo-location@~8.1.0:
   dependencies:
     invariant "^2.2.4"
 
-expo-mail-composer@~8.1.0:
+expo-mail-composer@^8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/expo-mail-composer/-/expo-mail-composer-8.1.0.tgz#7de693861e374add34ba4da69df677c2d6ba7104"
   integrity sha512-CMkDa5YX9YZj/ZLHp0f1WAMBrCZjGqsloOH9JzhnCwMVy0BR+lLYoYWiwx2zk2JTpUgADXjdQKK4edDFclGwtg==
@@ -3563,7 +3573,7 @@ makeerror@1.0.x:
   dependencies:
     tmpl "1.0.x"
 
-map-age-cleaner@^0.1.1:
+map-age-cleaner@^0.1.1, map-age-cleaner@^0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/map-age-cleaner/-/map-age-cleaner-0.1.3.tgz#7d583a7306434c055fe474b0f45078e6e1b4b92a"
   integrity sha512-bJzx6nMoP6PDLPBFmg7+xRKeFZvFboMrGlxmNj9ClvX53KrmvM5bXFXEWjbz4cz1AFn+jWJ9z/DJSz7hrs0w3w==
@@ -3609,6 +3619,14 @@ mem@^4.0.0:
     map-age-cleaner "^0.1.1"
     mimic-fn "^2.0.0"
     p-is-promise "^2.0.0"
+
+mem@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/mem/-/mem-6.1.0.tgz#846eca0bd4708a8f04b9c3f3cd769e194ae63c5c"
+  integrity sha512-RlbnLQgRHk5lwqTtpEkBTQ2ll/CG/iB+J4Hy2Wh97PjgZgXgWJWrFF+XXujh3UUVLvR4OOTgZzcWMMwnehlEUg==
+  dependencies:
+    map-age-cleaner "^0.1.3"
+    mimic-fn "^3.0.0"
 
 merge-stream@^1.0.1:
   version "1.0.1"
@@ -3902,6 +3920,11 @@ mimic-fn@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
+
+mimic-fn@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-3.0.0.tgz#76044cfa8818bbf6999c5c9acadf2d3649b14b4b"
+  integrity sha512-PiVO95TKvhiwgSwg1IdLYlCTdul38yZxZMIcnDSFIBUm4BNZha2qpQ4GpJ++15bHoKDtrW2D69lMfFwdFYtNZQ==
 
 minimatch@^3.0.4:
   version "3.0.4"
@@ -5617,11 +5640,6 @@ wcwidth@^1.0.1:
   integrity sha1-8LDc+RW8X/FSivrbLA4XtTLaL+g=
   dependencies:
     defaults "^1.0.3"
-
-websocket-extensions@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
-  integrity sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==
 
 whatwg-fetch@>=0.10.0, whatwg-fetch@^3.0.0:
   version "3.0.0"

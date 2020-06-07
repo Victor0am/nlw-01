@@ -146,7 +146,7 @@ const CreatePoint = () => {
             </header>
 
             <form onSubmit={handleSubmit}>
-                <h1>Cadasro do <br /> ponto de coleta</h1>
+                <h1>Cadastro do <br /> ponto de coleta</h1>
                 <DropZone onFileUploaded={setSelectedFile}/>
                 
                 <fieldset>

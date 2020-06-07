@@ -56,5 +56,7 @@ As tecnologias utilizadas nessa parte do projeto foram:
 * [Expo React Native SVG](https://docs.expo.io/versions/latest/sdk/svg/)
 * [React Native Emoji](https://github.com/EricPKerr/react-native-emoji)
 
---
-Made with :heart: by https://github.com/Victor0am 
+
+---
+
+Feito com :heart: por [Victor Aguiar](https://github.com/Victor0am) 

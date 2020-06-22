@@ -43,7 +43,7 @@ As tecnologias utilizadas nessa parte do projeto foram:
 
   Na aplicação mobile o usuário consegue ver os pontos de coleta cadastrados perto dele num mapa interativo. Ao tocar algum dos ítens de coleta, os pontos do mapa serão filtrados. Ao tocar no ponto de coleta exibido no mapa, o usuário é redirecionado para uma página com as informações do ponto de coleta.
   
-    ### :computer: Tecnologias
+   ### :computer: Tecnologias
 As tecnologias utilizadas nessa parte do projeto foram:
 * [React Native](https://reactnative.dev/docs/getting-started)
 * [React Navigation](https://reactnavigation.org/)

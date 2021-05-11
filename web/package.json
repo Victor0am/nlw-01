@@ -11,7 +11,7 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.8",
     "elliptic": "^6.5.3",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "logkitty": "^0.7.1",
     "mem": "^6.1.0",
     "react": "^16.13.1",
